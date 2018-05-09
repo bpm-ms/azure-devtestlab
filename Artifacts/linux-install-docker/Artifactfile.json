@@ -7,9 +7,17 @@
         "Docker",
         "Linux"
     ],
+    "parameters": {
+        "config": {
+            "type": "string",
+            "displayName": "Docker Daemon configuration (daemon.json)",
+            "allowEmpty": true,
+            "description": "The configuration parameters for the docker daemon as a json.  This is the json file placed at /etc/docker/daemon.json.  See https://docs.docker.com/config/daemon/#configure-the-docker-daemon for more info."
+        }
+    },
     "iconUri": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/Artifacts/linux-install-docker/dockerArtifact.png",
     "targetOsType": "Linux",
     "runCommand": {
-        "commandToExecute": "['sh linux_install_docker_v1.sh']"
+        "commandToExecute": "[concat('sh linux_install_docker_v1.sh', ' ', parameters('config'))]"
     }
 }
