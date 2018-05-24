@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Azure-CLI",
+    "description": "Install the Azure CLI on Linux.",
+    "tags": [
+        "Packages",
+        "azure",
+        "azure-cli",
+        "Linux"
+    ],
+    "targetOsType": "Linux",
+    "parameters": {
+    },
+    "runCommand": {
+        "commandToExecute": "['sh install-azure-cli.sh']"
+    }
+}
