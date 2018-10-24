@@ -1,4 +1,5 @@
-DOWNLOAD_URL="https://vstsagentpackage.azureedge.net/agent/2.131.0/vsts-agent-linux-x64-2.131.0.tar.gz"
+
+DOWNLOAD_URL="https://vstsagentpackage.azureedge.net/agent/2.140.2/vsts-agent-linux-x64-2.140.2.tar.gz"
 INSTALL_PATH=/usr/local/vsts-agent-install
 VSTS_ACCOUNT=""
 VSTS_ACCOUNT_TOKEN=""
