@@ -116,7 +116,7 @@ $LOGCMD "Creating work directory..."
 mkdir $VSTS_AGENT_WORK_DIR
 
 $LOGCMD "Configuring VSTS agent..."
-./config2.sh --unattended  --url "https://$VSTS_ACCOUNT.visualstudio.com" --auth pat --token "$VSTS_ACCOUNT_TOKEN" --pool "$VSTS_AGENT_POOL" --agent "$VSTS_AGENT_NAME" --work "$VSTS_AGENT_WORK_DIR" --acceptTeeEula --replace
+./config2.sh --unattended  --url "https://dev.azure.com/$VSTS_ACCOUNT" --auth pat --token "$VSTS_ACCOUNT_TOKEN" --pool "$VSTS_AGENT_POOL" --agent "$VSTS_AGENT_NAME" --work "$VSTS_AGENT_WORK_DIR" --acceptTeeEula --replace
 if [ $? -ne 0 ]; then
     $LOGCMD "ERROR: Could not configue VSTS agent correctly"
     exit 1
